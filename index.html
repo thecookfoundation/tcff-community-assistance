@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TC&FF Foundation</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<div class="sidebar">
+  <div class="logo">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="#D4AF37">
+      <path d="M12 2L2 7l10 5 10-5-10-5zm0 9L2 7v10l10 5 10-5V7l-10 4z"/>
+    </svg>
+    TC&FF
+  </div>
+
+  <a href="index.html">Home</a>
+  <a href="apply.html">Apply</a>
+  <a href="admin.html">Admin Panel</a>
+  <a href="privacy.html">Privacy</a>
+  <a href="cookies.html">Cookies</a>
+
+  <div class="info">
+    <p>@Thecook_j</p>
+    <p>thecookfoundation@proton.me</p>
+    <p>3433400052</p>
+  </div>
+</div>
+
+<div class="main">
+
+  <div class="hero">
+    <h1>TC&FF Community Assistance</h1>
+    <p>Food • Shelter • Financial Support for Individuals & Families</p>
+    <a class="btn" href="apply.html">Apply Now</a>
+  </div>
+
+  <div class="grid">
+    <div class="card">Food Assistance</div>
+    <div class="card">Shelter Support</div>
+    <div class="card">Financial Aid</div>
+  </div>
+
+</div>
+
+</body>
+</html>
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #081B3A;
+  color: white;
+  display: flex;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background: #06142b;
+  position: fixed;
+  padding: 20px;
+  border-right: 1px solid #D4AF37;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  color: #D4AF37;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.sidebar a {
+  display: block;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.sidebar a:hover {
+  background: #D4AF37;
+  color: #081B3A;
+}
+
+/* MAIN */
+.main {
+  margin-left: 250px;
+  padding: 40px;
+  width: 100%;
+}
+
+.hero {
+  background: radial-gradient(circle, #0d2a57, #081B3A);
+  padding: 60px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.hero h1 {
+  color: #D4AF37;
+  font-size: 40px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 20px;
+  background: #D4AF37;
+  color: #081B3A;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.card {
+  background: rgba(255,255,255,0.08);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* INFO */
+.info {
+  margin-top: 40px;
+  font-size: 12px;
+  color: #aaa;
+}
+
+/* MOBILE */
+@media(max-width: 768px){
+  body { flex-direction: column; }
+  .sidebar { position: relative; width: 100%; height: auto; }
+  .main { margin-left: 0; }
+  .grid { grid-template-columns: 1fr; }
+}
+<!DOCTYPE html>
+<html>
+<head>
+<title>Apply - TC&FF</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<div class="sidebar">
+  <div class="logo">TC&FF</div>
+  <a href="index.html">Home</a>
+  <a href="apply.html">Apply</a>
+  <a href="admin.html">Admin</a>
+</div>
+
+<div class="main">
+
+<h1 style="color:#D4AF37;">Application Form</h1>
+
+<form action="https://formspree.io/f/mbdvovzv" method="POST" enctype="multipart/form-data">
+
+  <input type="text" name="name" placeholder="Full Name" required><br><br>
+
+  <input type="email" name="email" placeholder="Email" required><br><br>
+
+  <textarea name="message" placeholder="Explain your situation" required></textarea><br><br>
+
+  <select name="help">
+    <option>Food</option>
+    <option>Shelter</option>
+    <option>Financial Aid</option>
+  </select><br><br>
+
+  <label>Upload ID</label><br>
+  <input type="file" name="file"><br><br>
+
+  <button class="btn" type="submit">Submit</button>
+
+</form>
+
+</div>
+
+</body>
+</html>
+<div class="main">
+<h1 style="color:#D4AF37;">Privacy Policy</h1>
+
+<p>
+We collect only submitted application data. We do not sell or share personal data.
+All submissions are handled securely via Formspree.
+</p>
+</div>
+<div class="main">
+<h1 style="color:#D4AF37;">Cookies Policy</h1>
+
+<p>
+This website uses minimal cookies for basic functionality only.
+No tracking or advertising cookies are used.
+</p>
+</div>
